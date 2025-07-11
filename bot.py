@@ -1,18 +1,18 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-import logging
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
-logger = logging.getLogger(__name__)
-
+# ✅ Tumhara real bot token:
 TOKEN = '8080954224:AAFxo_pdJdEfvjoVf1xGb2dG-VulJPpach8'
 
 def start(update, context):
     update.message.reply_text(
-        "❤️ Welcome to Cyber Mafia's Bot!
-"
-        "DM me if you face any problem with my bots.
-"
-        "You can also ask me if you want any help."
+        "❤️ Welcome to Cyber Mafia's Bot!\n"
+        "DM me if you face any problem with my bots.\n"
+        "You can also DM me if you want any help.\n"
+        "\nOptions:\n"
+        "1️⃣ Download Video\n"
+        "2️⃣ Download Audio\n"
+        "3️⃣ Help\n"
+        "4️⃣ Contact Owner"
     )
 
 def help_command(update, context):
